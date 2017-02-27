@@ -1,0 +1,13 @@
+<launch>
+	<arg name="frame_id"  default="/magnet_sensor"/>
+	<arg name="comm_port" default="/dev/ttyACM0"/>
+	<arg name="baudrate"  default="115200"/>
+	<arg name="sensor2read" default="8"/>
+	
+	<node pkg="mgs1600_driver" type="mgs1600_driver_node" name="magnet_sensor">
+		<param name="frame_id"  value="$(arg frame_id)"/>
+		<param name="comm_port" value="$(arg comm_port)"/>
+		<param name="baudrate"  value="$(arg baudrate)"/>
+		<param name="sensor2read" value="$(arg sensor2read)"/>
+	</node>
+</launch>

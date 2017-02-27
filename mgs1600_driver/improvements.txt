@@ -1,0 +1,4 @@
+definir como soft coded:
+	- o numero de sensor a ler 
+	- frequencia
+	- time stamp 
